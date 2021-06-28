@@ -1,0 +1,173 @@
+
+body{
+    
+    background-color: rgb(210, 210, 233);
+    min-height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+/*Navigation Bar*/
+header{
+    background:whitesmoke;
+}
+/*need to avoid the header shrinking since logo and bar are floating*/
+header::after{
+    content:'';
+    display: table;
+    clear:both;
+    
+    
+}
+
+.navigation{
+    width:95%;
+    margin: 0 auto;
+    font-family:'Work Sans', sans-serif;
+    font-weight: 300;
+    
+}
+.logo{
+    padding: 10px 0;
+    float:left;
+    
+}
+nav{
+    float:right;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 25px;
+
+    position: relative;
+}
+
+nav ul > li > a{
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+nav a:hover{
+    color: rgb(62, 63, 161);
+}
+/*loading bar thingy*/
+nav a::before{
+    content:'';
+    display: block;
+    height:5px;
+    width:0%;
+    background-color:rgb(62, 63, 161);
+    position: absolute;
+    top:0;
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before{
+    width:100%;
+}
+
+/*Introduction page*/
+
+.portrait{
+    margin-top:10px;
+    margin-bottom:0;
+    padding-bottom:0;
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    border-radius:50%;
+    border: 3px solid white;
+}
+.center{
+    text-align: center;
+    padding-bottom: 20px;
+}
+h1{
+    font-size: clamp(1rem,2vw , 5rem);
+    position: relative;
+    font-family: "Source Code Pro", monospace;   
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:0;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+h1::before,
+h1::after{
+    content:'';
+    position: absolute;
+
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+}
+
+h1::before{
+    background:rgb(210, 210, 233);
+    animation: typewriter 3s steps(23) 500ms forwards;
+}
+
+h1::after{
+    width: 0.125em;
+    background: black;
+    animation: typewriter 3s steps(23) 500ms forwards, blink 500ms steps(23) infinite;
+}
+.subtitle{
+    color: hsl(0 0% 0% / 0.7);
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3rem);
+    margin-bottom: 2rem;
+    margin-top: 0;
+    animation: fadeInUp 2s ease 4s forwards;
+}
+
+@keyframes fadeInUp{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes typewriter{
+    to{
+        left: 100%;
+    }
+
+}
+
+@keyframes blink{
+    to{
+        background: transparent;
+    }
+}
+
+h2{
+    font-family: "Work Sans", sans-serif;
+    font-size: 28;
+}
+
+.body2{
+    font-family: "PT Sans", serif;
+    background: whitesmoke;
+    font-size: 16px;
+    padding: 10px 25px;
+}
+
+a{
+    text-decoration: none;
+}
