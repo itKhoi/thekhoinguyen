@@ -8,6 +8,10 @@ body{
     
 }
 
+a{
+    text-decoration: none;
+}
+
 /*Navigation Bar*/
 header{
     background:whitesmoke;
@@ -164,10 +168,25 @@ h2{
 .body2{
     font-family: "PT Sans", serif;
     background: whitesmoke;
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px 25px;
+    line-height: 1.5;
 }
 
-a{
-    text-decoration: none;
+.logos{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.logos > a{
+    padding: 10px 25px;
+    
+}
+
+.logos >a > i{
+    color:black;
+}
+
+.logos > a > i:hover{
+    color:rgb(210, 210, 233);
 }
