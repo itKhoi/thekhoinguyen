@@ -190,3 +190,11 @@ h2{
 .logos > a > i:hover{
     color:rgb(210, 210, 233);
 }
+
+.body1{
+    font-family: "PT Sans", serif;
+    font-size: 18px;
+    padding: 10px 25px;
+    line-height: 1.5;
+    
+}
