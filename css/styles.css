@@ -169,7 +169,7 @@ h2{
     font-family: "PT Sans", serif;
     background: whitesmoke;
     font-size: 18px;
-    padding: 10px 25px;
+    padding: 10px 50px;
     line-height: 1.5;
 }
 
@@ -194,6 +194,6 @@ h2{
 .body1{
     font-family: "PT Sans", serif;
     font-size: 18px;
-    padding: 10px 25px;
+    padding: 10px 50px;
     line-height: 1.5;
 }
