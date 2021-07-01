@@ -197,3 +197,12 @@ h2{
     padding: 10px 50px;
     line-height: 1.5;
 }
+
+.grad{
+    float: left;
+    padding-right: 10px;
+}
+
+.projects{
+    text-align: center;
+}
