@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Navigation bar font-->
     <script src="https://use.fontawesome.com/2cb9c2b0cd.js"></script>
+    <link rel = "stylesheet" href= "https://fonts.googleapis.com/css2?family=Roboto+Mono">
     <link rel = "stylesheet" href = "https://fonts.googleapis.com/css2?family=Work+Sans:300">
     <link rel = "stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap">
     <link rel = "stylesheet" href = "https://fonts.googleapis.com/css2?family=PT+Sans&display=swap">
@@ -23,10 +24,11 @@
             <!--nav bar section-->
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="resources/Resume2.pdf"target="_blank">Resume</a></li>
+                    <li><a href="#AboutMe">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Hobby">Hobbies</a></li>
+                    <li><a href="resources/khoi_nguyen_resume.pdf"target="_blank">Resume</a></li>
                 </ul>
 
             </nav>
@@ -39,6 +41,7 @@
         <p class="subtitle">Welcome to my website!</p>
     </div>
     <!--About me section-->
+    <a id="AboutMe"></a>
     <div class = "body2">
         <img src="images/gradman.png" alt="grad" class="grad" width = "75" length = "75">
         <h2>About Me</h2>
@@ -77,6 +80,7 @@
     </div>
 
     <!--Skills Section-->
+    <a id="Skills"></a>
     <div class="body1">
         <img src="images/sitdesk.png" alt="desk" class="grad" width = "75" length = "75">
         <h2>Skills</h2>
@@ -90,6 +94,7 @@
     </div>
         
     <!--Relevant Projects(try to have it go to text documents explaining)-->
+    <a id="Projects"></a>
     <div class="body2">
         <img src="images/project.png" alt="project" class="grad" width = "75" length = "75">
         <h2>Projects</h2>
@@ -102,14 +107,32 @@
                         <input type="radio" name="r" id="r3">
                         <div class="slide s1">
                             <a href="https://github.com/itKhoi/SuperMario" target="_blank" class="button" id="b1">Git Repo</a>
+                            <div class="skilltabs">
+                                <div class=skill id="Java">Java</div>
+                                <div class=skill id="Git">Git</div>
+                                <div class=skill id="Android">Android Studio</div>
+                                <div class=skill id="UIUX">UI/UX</div>
+                            </div>
                             <img src="images/mario.png">
                         </div>
                         <div class="slide">
                             <a href="https://github.com/itKhoi/SeniorDesign" target="_blank" class="button" id="b2">Git Repo</a>
+                            <div class="skilltabs">
+                                <div class=skill id="Python">Python</div>
+                                <div class=skill id="Solidworks">Solidworks</div>
+                                <div class=skill id="Arduino">Arduino</div>
+                                <div class=skill id="Git">Git</div>
+                            </div>
                             <img src="images/robothand.jpg">
                         </div>
                         <div class="slide">
                             <a href="https://github.com/itKhoi/ChessGame" target="_blank" class="button" id="b3">Git Repo</a>
+                            <div class="skilltabs">
+                                <div class=skill id="C">C</div>
+                                <div class=skill id="Cplus">C++</div>
+                                <div class=skill id="Git">Git</div>
+                                <div class=skill id="Linux">Linux</div>
+                            </div>
                             <img src="images/ascii_board.png">
                         </div>
                     </div>
@@ -119,11 +142,76 @@
                         <label for="r2" class="bar"></label>
                         <label for="r3" class="bar"></label>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
+    <!--Hobbies section-->
+    <a id="Hobby"></a>
+    <div class="body1">
+        <h2>Hobbies</h2>
+        <div class="hobby-wrapper">
+            <div class="card" id="pc">
+                <div class="card-content">
+                    <h2 class="card-title">Custom PC </h2>
+                    <p class="card-body">Over the COVID-19 pandemic, I really got into building computers. The original need for building a PC came from
+                        my enjoyment of video games and the need for a strong workspace. However, the more research I did into custom PC parts, the more I fell in 
+                        love with the hobby because of all the custom possibilities such as builds submerged in mineral water. My favorite YouTuber for builds is 
+                        KristoferYee.
+                    </p>
+                    <a href="https://pcpartpicker.com/user/monicakhoi/saved/#view=3FG4Mp" target="_blank"class="hobby-button">Learn more</a>
+                </div>
+            </div>
+            <div class="card" id="keeb">
+                <div class="card-content">
+                    <h2 class="card-title">Custom Keyboard</h2>
+                    <p class="card-body">The custom keyboard world is a small but dedicated community. The main way to get parts are through group buys since 
+                        manufacturing is not that mainstream for the industry. My build is a KBD8X MKII in black. I am using cream switches that have been: lubed 
+                        with Krytox 205G0, spring swapped, and filmed. The keycaps right now are generic but I have ordered GMK Dolch keycaps.
+                    </p>
+                    <a href="https://kbdfans.com/products/kbd8x-mkii-custom-mechanical-keyboard-kit-for-black?_pos=20&_sid=861e6efe3&_ss=r" target="_blank" class="hobby-button">Learn more</a>
+                </div>
+            </div>
+            <div class="card" id="spotify">
+                <div class="card-content">
+                    <h2 class="card-title">&nbsp Spotify</h2>
+                    <p class="card-body">I'm always listening to music and have gone through many phases for what music I like. In music I listened to 
+                        alternative rock and as I got older, I went through an EDM phase and am now settled in an R&B and rap phase. My current favorited artists are 
+                        Blxst, Justin Bieber, and Jack Harlow. Honestly, I like all genres of music and have some songs from most genres in my playlist. Check out my playlist!
+                    </p>
+                    <a href="https://open.spotify.com/user/khoipoop" target="_blank" class="hobby-button">Learn more</a>
+                </div>
+            </div>
+            <div class="card" id="valorant">
+                <div class="card-content">
+                    <h2 class="card-title">&nbsp Valorant </h2>
+                    <p class="card-body">My favorite game at the moment is Valorant. Competitive first person shooters were always my go-to for multiplayer games 
+                        with Counter Strike: Global Offensive being a game I played for years. In general, I play around 2-3 games of valorant a day which is about 
+                        2 hours. When I used to play a lot, I hit diamond in the game which is in the 95th percentile of all players.
+                    </p>
+                    <a href="https://tracker.gg/valorant/profile/riot/BigBoyKhoi%238410/overview" target="_blank" class="hobby-button">Learn more</a>
+                </div>
+            </div>
+            <div class="card" id="food">
+                <div class="card-content">
+                    <h2 class="card-title">&nbsp Food </h2>
+                    <p class="card-body">Good food is always a great time. A favorite hobby of mine is going to popular restaurants and just enjoying myself 
+                        A lot of my recommendations for food palces come from friends or YouTubers such as StrictlyDumpling and DanVsWorld. StrictlyDumpling's 
+                        Vegas videos are by far my favorite. Below is a link to my favorite video from him where he compares my favorite buffets.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=T5VB4PON0eA&t=11s" target="_blank" class="hobby-button">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body2">
+        <div class="closer">
+            <p>Created with HTML5/CSS by Khoi Nguyen</p>
+            <p>&#169 Copyright 2021</p>
+        </div>
+    </div>
+    
 
 
 </body>
